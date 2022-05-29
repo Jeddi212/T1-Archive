@@ -1,0 +1,69 @@
+Nama	: Jedediah Fanuel (Jeddi)
+NIM	: 1119023
+Tanggal	: 21 Agustus 2019
+_____________________________________________________________________________________________
+
+1. ALGORITNA_PENGHITUNG_RAPOT
+
+	Deklarasi
+	P_ABSEN	= Float
+	P_QUIZ	= Float
+	P_TUGAS	= Float
+	P_UTS	= Float
+	P_UAS	= Float
+	N_ABSEN	= Float
+	N_QUIZ	= Float
+	N_TUGAS	= Float
+	N_UTS	= Float
+	N_UAS	= Float
+	NA	= Float
+
+	Deskripsi
+	Read(P_ABSEN, P_QUIZ, P_TUGAS, P_UTS, P_UAS, N_ABSEN, N_QUIZ, N_TUGAS, N_UTS, N_UAS)
+
+	NA = (N_ABSEN*P_ABSEN)+(N_QUIZ*P_QUIZ)+(N_TUGAS*P_TUGAS)+(N_UTS*P_UTS)+(N_UAS*P_UAS)
+
+	Write(NA)
+_____________________________________________________________________________________________
+2. ALGORITMA_GREGORIAN_CALENDAR_KABISAT
+
+	Deklarasi
+	T	= Integer
+	H	= String
+
+	Deskripsi
+	Read(T)
+
+	If (T MOD 400 = 0) AND (T MOD 100 = 0) Then
+	H = "Tahun Kabisat"
+	Else If T MOD 4 = 0 Then
+	H = "Tahun Kabisat"
+	Else
+	H = "Bukan Tahun Kabisat"
+	End If
+
+	Write(H)
+_____________________________________________________________________________________________
+3. ALGORITMA_PARKIR_RUMAH_SAKIT
+
+	Deklarasi
+	J	= Integer
+	B1	= Integer
+	B2	= Integer
+	M	= Integer
+	T	= Float
+
+	Deskripsi
+	Read(J, B1, B2, M)
+
+	If (J <= 1) Then
+	T = B1
+	Else If (J > 1) Then
+	T = B1 + (J-1) * B2
+	Else If (T > M) Then
+	T = M
+	Else
+	T = "Please Input Integer"
+	End If
+
+	Write(T)

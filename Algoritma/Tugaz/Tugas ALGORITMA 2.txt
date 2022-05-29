@@ -1,0 +1,79 @@
+Nama	: Jedediah Fanuel (Jeddi)
+NIM	: 1119023
+Tanggal	: 29 Agustus 2019
+_____________________________________________________________________________________________
+
+1. Algoritma_Parkir_Next_Level
+
+	Deklarasi
+
+	Jam_Masuk	= Integer
+	Jam_Keluar	= Integer
+	Menit_Masuk	= Integer
+	Menit_Keluar	= Integer
+	Detik_Masuk	= Integer
+	Detik_Keluar	= Integer
+	Max_Biaya	= Integer
+	Jam_Proses	= Integer
+	Biaya1		= Integer = 1500
+	Biaya2		= Integer = 1000
+	Total_Biaya	= Float
+
+	Deskripsi
+	Read(Jam_Masuk, Jam_Keluar, Menit_Masuk, Menit_Keluar, Detik_Masuk,
+		Detik_Keluar, Max_Biaya, Total_Biaya)
+
+	If (Jam_Masuk < Jam_Keluar)
+	Then Jam_Proses = Jam_Keluar - Jam_Masuk
+	Else if (Jam_Masuk > Jam_Keluar)
+	     Then Jam_Proses = 24 - (Jam_Masuk - Jam_Keluar)
+	     Else //Jam_Masuk = Jam_Keluar
+	     Jam_Proses = Jam_Keluar - Jam_Masuk
+	     Endif
+	Endif
+
+	If ((Menit_Masuk > Menit_Keluar)) OR ((Menit_Masuk = Menit_Keluar) AND (Detik_Masuk = Detik_Keluar)) OR ((Menit_Masuk = Menit_Keluar) AND (Detik_Masuk > Detik_Keluar))
+	Then Jam_Proses = Jam_Proses
+	Else //((Menit_Masuk < Menit_Keluar)) OR ((Menit_Masuk = Menit_Keluar) AND (Detik_Masuk < Detik_Keluar))
+	Jam_Proses = Jam_Proses + 1
+	Endif
+
+	If (Jam_Proses <= 1)
+	Then Total_Biaya = Biaya1
+	Else (Jam_Proses > 1)
+	     Then Total_Biaya = Biaya1 + (Jam_Proses-1) * Biaya2
+	     Endif
+	Endif
+
+	If (Total_Biaya > Max_Biaya)
+	Then Total_Biaya = Max_Biaya
+	Endif
+	    
+
+	Write(Total_Biaya)
+_____________________________________________________________________________________________
+
+2. Algoritma_Pajak
+
+Deklarasi
+	Gaji_Pokok	= Integer
+	Tunjangan	= Integer
+	Jumlah_Anak	= Integer
+	Orang_Tua	= Integer
+	Mertua		= Integer
+	PTKP		= Integer
+	Menikah		= Integer
+
+Deskripsi
+	Read()
+
+	
+
+
+
+
+
+
+___________________________________________________________________
+
+3. Algoritma_Border
